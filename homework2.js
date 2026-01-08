@@ -17,7 +17,7 @@
   // Arrow function to get completed tasks
   const getCompletedTasks = (tasksArray) => tasksArray.filter(task => task.completed);
 
-  // Arrow function to print all tasks nicely
+  // Arrow function to print all tasks 
   const printTasks = (tasksArray) => {
     tasksArray.forEach(task => {
       console.log(`Task "${task.title}" (id: ${task.id}) is ${task.completed ? "completed" : "incomplete"}`);

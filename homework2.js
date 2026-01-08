@@ -17,7 +17,7 @@
   // Arrow function to get completed tasks
   const getCompletedTasks = (tasksArray) => tasksArray.filter(task => task.completed);
 
-  // Arrow function to print all tasks 
+  // Arrow function to print all tasks (completed = true , incomplete = false)
   const printTasks = (tasksArray) => {
     tasksArray.forEach(task => {
       console.log(`Task "${task.title}" (id: ${task.id}) is ${task.completed ? "completed" : "incomplete"}`);
@@ -52,7 +52,7 @@
     return task;
   };
 
-  // Clone tasks 
+  // Clone tasks using ...
   const cloneTasks = (tasksArray) => [...tasksArray];
 
   // Return new array with all tasks completed, without mutating original
@@ -62,7 +62,10 @@
   addTask("Task A", 30);
   addTask("Task B", 20);
 
+  // we call clone task function
   const tasksCopy = cloneTasks(tasks);
+
+  // we call the function that gets all completed tasks
   const allCompletedVersion = getTasksWithAllCompleted(tasks);
 
   console.log("Original tasks:");

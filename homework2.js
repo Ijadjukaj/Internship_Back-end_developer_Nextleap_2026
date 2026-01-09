@@ -27,13 +27,14 @@
   console.log("All tasks:");
   printTasks(tasks);
 
+  // We call getCompletedTasks function with an argument in it
   const completedTasks = getCompletedTasks(tasks);
   console.log("Completed tasks:");
   printTasks(completedTasks);
 }
 
 ///////////////////////
-// Homework Part 2 
+// Homework Part 2 - Immutability Challenge (Copying Arrays)
 ///////////////////////
 {
   console.log("\n=== Part 2: Immutability Challenge ===");
@@ -107,7 +108,7 @@
   addTask("Write report", 40);
   addTask("Exercise", 30);
 
-  // Pure function: sum estimatedMinutes
+  // Pure function: sum estimatedMinutes (Used reduce to find the sum between sum and estimatedMinutes for each object , in this task sum is initiated with 0 at begining
   const getTotalEstimatedMinutes = (tasksArray) => tasksArray.reduce((sum, task) => sum + task.estimatedMinutes, 0);
 
   // Pure function: average estimatedMinutes

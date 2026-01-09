@@ -117,6 +117,7 @@
     return getTotalEstimatedMinutes(tasksArray) / tasksArray.length;
   };
 
+  // We call the functions above
   const total = getTotalEstimatedMinutes(tasks);
   const average = getAverageEstimatedMinutes(tasks);
 

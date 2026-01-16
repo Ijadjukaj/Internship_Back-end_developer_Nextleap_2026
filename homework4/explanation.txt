@@ -1,0 +1,3 @@
+My app uses fetch function to make a GET request to the API URL. The API returns a list of data in
+json format. After receiving data I create an object by mapping each data from JSON to javascript
+object. Then using javascript object I render each data by creating li element.
